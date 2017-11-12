@@ -26,7 +26,7 @@ public class Login extends HttpServlet {
 		String errorStream = new String();
 		StringBuilder stringBuilder = new StringBuilder();
 		
-		if(username.matches("^.*[^a-zA-Z0-9 ].*$")) {
+		if(username.matches("^.*[^a-zA-Z0-9]. *$")) {
 			errorStream = ("<p>alphanumeric usernames only fool</p>");
 			error = true;
 		}
